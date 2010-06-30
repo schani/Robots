@@ -1,0 +1,437 @@
+{\rtf0\ansi{\fonttbl\f0\fnil Times-Roman;\f1\ftech Symbol;\f2\fswiss Helvetica;\f3\fmodern Ohlfs;}
+\paperw16220
+\paperh16100
+\margl120
+\margr0
+\f0\b0\i0\ulnone\ql\fs24\fi0\li0\gray0\fc0\cf0\up0\dn0 Copyright 
+\f1 ã
+\f0  1997 by Mark Probst. All Rights Reserved.  \
+
+\fs16 \
+\
+\
+
+\f2\b\fs56\li2100 Robot
+\b0 \
+
+\fs16 \
+\
+\
+\
+\
+
+\pard\tx4880\b\fs28\fi-2780\li4880\fc0\cf0 Inherits From:
+\f0\b0 	NSObject\
+
+\f2\b Declared In:
+\f0\b0 	Robot.h\
+
+\pard\fs16\li1360\fc0\cf0 \
+\
+\
+\
+
+\f2\b\fs36 Class Description
+\b0 \
+
+\fs16 \
+
+\pard\tx2480\tx2860\tx3240\f0\fs28\li2100\fc0\cf0 A Robot is a virtual entity which is designed to fight other robots on a battlefield.  The battlefield is 1000x1000 units large and is confined by solid walls.  A robot may move on the battlefield and may fire missiles.  To detect other robots it can scan a portion of the battlefield.  \
+
+\fs16 \
+
+\fs28 In order to move, the robot has a built-in engine.  By virtue of the 
+\b -accelerateWithHeading:speedGoal:
+\b0  method, the engine can be ordered to start accelerating with a specified heading to a specified speed.  Angles are always specified in degrees (0-360).  Robot speed is specified in percents of top speed (0-100).\
+
+\fs16 \
+
+\fs28 To detect other robots, a robot can scan from its current position an interval between two angles.  The interval is specified by its center and its radius, i.e.  scanning with direction 40 and radius 4 means scanning the range (36,44).  The radius may not be more than 10 degrees.  A scan determines the nearest robot within that range.\
+
+\fs16 \
+
+\fs28 Another robot can be damaged by hitting it with a missile.  A missile can be fired with a heading and a range.  The missile then travels the specified range with the specified heading, starting from the position of the robot at the time the missile was fired and detonates after it has traveled the range.  The range cannot be larger than 700 units.  A robot standing within 5 units of detonation suffers 10 damage points, a robot within 20 units 5 points and a robot within 40 units of the point of detonation suffers 3 points damage.  A robot that has taken 100 points of damage is destroyed and therefore removed from the battlefield.  Robots cannot be repaired.  Damage does not impair robots, i.e.  a robot with 99 damage points performs as well as a robot that has not taken any damage at all.  Hitting a wall takes 2 damage points.\
+
+\fs16 \
+
+\fs28 Time is measured in ticks.  It takes one tick for a robot at full speed to travel 1 unit.  A missile travels exactly 10 units in one tick.  Scanning as well as commencing acceleration takes exactly one tick.  Querying attributes of the robot (speed, position, ...)  takes no time.  All this means that time is measured the same way for all robots, regardless of the machine they run on and independent of the operating systems process management.  It also means that the robot server has to wait for each client for a command for every single tick.  This comes down to the fact that it is useless to let a robot process wait for some time if it wants to perform no action for one tick.  On the contrary, tournament rules specify that if a robot does not send any command for 10 ms, it is disqualified.  In order to do nothing, the robot has to call -nop, which does exactly this and takes one tick to perform.\
+
+\fs16 \
+
+\fs28 To write a robot, it is necessary to subclass Robot and override the method 
+\b -run
+\b0 . \
+
+\pard\fs16\li1360\fc0\cf0 \
+\
+\
+\
+
+\f2\b\fs36 Method Types
+\b0 \
+
+\fs16 \
+
+\pard\tx6140\f0\fs28\fi-4040\li6140\fc0\cf0 Creating and deallocating	
+\f1 -
+\f0  initWithConnection:\
+	
+\f1 -
+\f0  dealloc\
+
+\fs16 \
+
+\fs28 Commanding the robot	
+\f1 -
+\f0  accelerateWithHeading:speedGoal:\
+	
+\f1 -
+\f0  fireMissileWithHeading:range:\
+	
+\f1 -
+\f0  scanInDirection:radius:\
+	
+\f1 -
+\f0  nop\
+
+\fs16 \
+
+\fs28 Querying the robot	
+\f1 -
+\f0  damage\
+	
+\f1 -
+\f0  speed\
+	
+\f1 -
+\f0  positionX\
+	
+\f1 -
+\f0  positionY\
+	
+\f1 -
+\f0  getPositionX:y:\
+	
+\f1 -
+\f0  timeInTicks\
+	
+\f1 -
+\f0  isLauncherLoaded\
+
+\fs16 \
+
+\fs28 Starting the robot	
+\f1 -
+\f0  run\
+
+\pard\fs16\li1360\fc0\cf0 \
+\
+\
+\
+
+\f2\b\fs36 Instance Methods
+\b0 \
+
+\fs16 \
+
+\pard\tx2480\tx2860\tx3240\b\fs28\li2100\fc0\cf0 accelerateWithHeading:speedGoal:
+\b0 \
+
+\f0\fs8 \
+
+\pard\tx3240\f1\fs28\fi-760\li3240\fc0\cf0 -
+\f0  (void)
+\b accelerateWithHeading:
+\b0 (double)
+\i heading
+\i0 \
+	
+\b  speedGoal:
+\b0 (double)
+\i speedGoal
+\i0 \
+
+\fs16 \
+
+\pard\tx2480\tx2860\tx3240\fs28\li2100\fc0\cf0 Commences acceleration.  If the current speed of the robot is less than 50 the 
+heading is changed to 
+\i heading
+\i0 .  Depending on whether the 
+\i speedGoal
+\i0  is less or greater than the robot's current speed the robot either slows down or accelerates.  This command takes one tick.  Please note that this does not mean that the robot takes one tick to change 
+heading and/or speed. \
+
+\fs16 \
+\
+\
+
+\f2\b\fs28 damage
+\b0 \
+
+\f0\fs8 \
+
+\pard\tx3240\f1\fs28\fi-760\li3240\fc0\cf0 -
+\f0  (int)
+\b damage
+\b0 \
+
+\fs16 \
+
+\pard\tx2480\tx2860\tx3240\fs28\li2100\fc0\cf0 Returns the damage of the robot.  This number is always non-negative and less than 100. \
+
+\fs16 \
+\
+\
+
+\f2\b\fs28 dealloc
+\b0 \
+
+\f0\fs8 \
+
+\pard\tx3240\f1\fs28\fi-760\li3240\fc0\cf0 -
+\f0  (void)
+\b dealloc
+\b0 \
+
+\fs16 \
+
+\pard\tx2480\tx2860\tx3240\fs28\li2100\fc0\cf0 Releases all memory occupied by the object. \
+
+\fs16 \
+\
+\
+
+\f2\b\fs28 fireMissileWithHeading:range:
+\b0 \
+
+\f0\fs8 \
+
+\pard\tx3240\f1\fs28\fi-760\li3240\fc0\cf0 -
+\f0  (void)
+\b fireMissileWithHeading:
+\b0 (double)
+\i heading
+\i0 \
+	
+\b  range:
+\b0 (double)
+\i radius
+\i0 \
+
+\fs16 \
+
+\pard\tx2480\tx2860\tx3240\fs28\li2100\fc0\cf0 Fires a missile with the 
+heading 
+\i heading
+\i0  for detonation within range units from the current position.  If the missile launcher is not loaded, this method waits until it is. \
+
+\fs16 \
+\
+\
+
+\f2\b\fs28 getPositionX:y:
+\b0 \
+
+\f0\fs8 \
+
+\pard\tx3240\f1\fs28\fi-760\li3240\fc0\cf0 -
+\f0  (void)
+\b getPositionX:
+\b0 (double*)
+\i x
+\i0  
+\b  y:
+\b0 (double*)
+\i y
+\i0 \
+
+\fs16 \
+
+\pard\tx2480\tx2860\tx3240\fs28\li2100\fc0\cf0 Returns both coordinates of the current position in 
+\i x
+\i0  and 
+\i y
+\i0 . \
+
+\fs16 \
+\
+\
+
+\f2\b\fs28 initWithConnection:
+\b0 \
+
+\f0\fs8 \
+
+\pard\tx3240\f1\fs28\fi-760\li3240\fc0\cf0 -
+\f0  (id)
+\b initWithConnection:
+\b0 (ServerConnection*)
+\i theConnection
+\i0 \
+
+\fs16 \
+
+\pard\tx2480\tx2860\tx3240\fs28\li2100\fc0\cf0 Initializes the robot for communication with a robot server through 
+\i theConnection
+\i0 . \
+
+\fs16 \
+\
+\
+
+\f2\b\fs28 isLauncherLoaded
+\b0 \
+
+\f0\fs8 \
+
+\pard\tx3240\f1\fs28\fi-760\li3240\fc0\cf0 -
+\f0  (BOOL)
+\b isLauncherLoaded
+\b0 \
+
+\fs16 \
+
+\pard\tx2480\tx2860\tx3240\fs28\li2100\fc0\cf0 Returns whether the missile launcher is loaded.  Reloading the missile launcher takes 50 ticks. \
+
+\fs16 \
+\
+\
+
+\f2\b\fs28 nop
+\b0 \
+
+\f0\fs8 \
+
+\pard\tx3240\f1\fs28\fi-760\li3240\fc0\cf0 -
+\f0  (void)
+\b nop
+\b0 \
+
+\fs16 \
+
+\pard\tx2480\tx2860\tx3240\fs28\li2100\fc0\cf0 Waits one tick. \
+
+\fs16 \
+\
+\
+
+\f2\b\fs28 positionX
+\b0 \
+
+\f0\fs8 \
+
+\pard\tx3240\f1\fs28\fi-760\li3240\fc0\cf0 -
+\f0  (double)
+\b positionX
+\b0 \
+
+\fs16 \
+
+\pard\tx2480\tx2860\tx3240\fs28\li2100\fc0\cf0 Returns the x-coordinate of the current position, which is non-negative and less or equal 1000. \
+
+\fs16 \
+\
+\
+
+\f2\b\fs28 positionY
+\b0 \
+
+\f0\fs8 \
+
+\pard\tx3240\f1\fs28\fi-760\li3240\fc0\cf0 -
+\f0  (double)
+\b positionY
+\b0 \
+
+\fs16 \
+
+\pard\tx2480\tx2860\tx3240\fs28\li2100\fc0\cf0 Returns the y-coordinate of the current position, which is non-negative and less or equal 1000. \
+
+\fs16 \
+\
+\
+
+\f2\b\fs28 run
+\b0 \
+
+\f0\fs8 \
+
+\pard\tx3240\f1\fs28\fi-760\li3240\fc0\cf0 -
+\f0  (void)
+\b run
+\b0 \
+
+\fs16 \
+
+\pard\tx2480\tx2860\tx3240\fs28\li2100\fc0\cf0 This method should be overridden by subclasses to provide the behaviour of the robot. \
+
+\fs16 \
+\
+\
+
+\f2\b\fs28 scanInDirection:radius:
+\b0 \
+
+\f0\fs8 \
+
+\pard\tx3240\f1\fs28\fi-760\li3240\fc0\cf0 -
+\f0  (double)
+\b scanInDirection:
+\b0 (double)
+\i heading
+\i0 \
+	
+\b  radius:
+\b0 (double)
+\i angle
+\i0 \
+
+\fs16 \
+
+\pard\tx2480\tx2860\tx3240\fs28\li2100\fc0\cf0 Performs a scan in the range (
+\i heading
+\i0 -
+\i angle
+\i0 ,
+\i heading
+\i0 +
+\i angle
+\i0 ).  Returns the distance to the nearest robot within that range or a negative number if there is no robot. \
+
+\fs16 \
+\
+\
+
+\f2\b\fs28 speed
+\b0 \
+
+\f0\fs8 \
+
+\pard\tx3240\f1\fs28\fi-760\li3240\fc0\cf0 -
+\f0  (double)
+\b speed
+\b0 \
+
+\fs16 \
+
+\pard\tx2480\tx2860\tx3240\fs28\li2100\fc0\cf0 Returns the speed of the robot, which is always non-negative and less or equal 100. \
+
+\fs16 \
+\
+\
+
+\f2\b\fs28 timeInTicks
+\b0 \
+
+\f0\fs8 \
+
+\pard\tx3240\f1\fs28\fi-760\li3240\fc0\cf0 -
+\f0  (int)
+\b timeInTicks
+\b0 \
+
+\fs16 \
+
+\pard\tx2480\tx2860\tx3240\fs28\li2100\fc0\cf0 Returns the number of ticks since the game started. \
+
+}

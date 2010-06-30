@@ -1,0 +1,6 @@
+"FirstResponder" = {ACTIONS = {}; OUTLETS = {}; SUPERCLASS = NSObject; };
+"RobotGame" = {
+    ACTIONS = {"dontStartGame:" = id; "startGame:" = id; "stopGame:" = id; }; 
+    OUTLETS = {nameTextField = id; numPopUp = id; playFieldView = id; }; 
+    SUPERCLASS = NSObject; 
+};

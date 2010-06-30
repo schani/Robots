@@ -1,0 +1,20 @@
+# -*- makefile -*-
+
+CC=gcc
+CCOPTS=-O3 -Wall -Wno-import -D_ROBOT_CLIENT -D_LINUX
+
+OBJECTS=Request.o Response.o Robot.o ServerConnection.o
+
+all : libRobotClient.a
+
+%.o : %.m
+	$(CC) $(CCOPTS) -c $<
+
+%.o : %.c
+	$(CC) $(CCOPTS) -c $<
+
+libRobotClient.a : $(OBJECTS)
+	ar -scr libRobotClient.a $(OBJECTS)
+
+clean :
+	-rm *~ *.o libRobotClient.a

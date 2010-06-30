@@ -1,0 +1,177 @@
+{\rtf0\ansi{\fonttbl\f0\fnil Times-Roman;\f1\ftech Symbol;\f2\fswiss Helvetica;\f3\fmodern Ohlfs;}
+\paperw16220
+\paperh15620
+\margl120
+\margr0
+\f0\b0\i0\ulnone\ql\fs24\fi0\li0\gray0\fc0\cf0\up0\dn0 Copyright 
+\f1 ã
+\f0  1997 by Mark Probst. All Rights Reserved.  \
+
+\fs16 \
+\
+\
+
+\f2\b\fs56\li2100 ServerConnection
+\b0 \
+
+\fs16 \
+\
+\
+\
+\
+
+\pard\tx4880\b\fs28\fi-2780\li4880\fc0\cf0 Inherits From:
+\f0\b0 	NSObject\
+
+\f2\b Declared In:
+\f0\b0 	ServerConnection.h\
+
+\pard\fs16\li1360\fc0\cf0 \
+\
+\
+\
+
+\f2\b\fs36 Class Description
+\b0 \
+
+\fs16 \
+
+\pard\tx2480\tx2860\tx3240\f0\fs28\li2100\fc0\cf0 ServerConnection forms a connection to a robot server which must run on the same machine. \
+
+\pard\fs16\li1360\fc0\cf0 \
+\
+\
+\
+
+\f2\b\fs36 Method Types
+\b0 \
+
+\fs16 \
+
+\pard\tx6140\f0\fs28\fi-4040\li6140\fc0\cf0 Creating and deallocating	
+\f1 -
+\f0  initForGameWithName:\
+	
+\f1 -
+\f0  dealloc\
+
+\fs16 \
+
+\fs28 Communicating with the server	
+\f1 -
+\f0  writeRequest:\
+	
+\f1 -
+\f0  readResponse\
+
+\fs16 \
+
+\fs28 Querying attributes	
+\f1 -
+\f0  timeInTicks\
+
+\pard\fs16\li1360\fc0\cf0 \
+\
+\
+\
+
+\f2\b\fs36 Instance Methods
+\b0 \
+
+\fs16 \
+
+\pard\tx2480\tx2860\tx3240\b\fs28\li2100\fc0\cf0 dealloc
+\b0 \
+
+\f0\fs8 \
+
+\pard\tx3240\f1\fs28\fi-760\li3240\fc0\cf0 -
+\f0  (void)
+\b dealloc
+\b0 \
+
+\fs16 \
+
+\pard\tx2480\tx2860\tx3240\fs28\li2100\fc0\cf0 Frees all memory occupied by the receiver. \
+
+\fs16 \
+\
+\
+
+\f2\b\fs28 initForGameWithName:
+\b0 \
+
+\f0\fs8 \
+
+\pard\tx3240\f1\fs28\fi-760\li3240\fc0\cf0 -
+\f0  (id)
+\b initForGameWithName:
+\b0 (NSString*)
+\i name
+\i0 \
+
+\fs16 \
+
+\pard\tx2480\tx2860\tx3240\fs28\li2100\fc0\cf0 Initializes the connection and connects to the robot server which hosts a game with the 
+\i name
+\i0  name. \
+
+\fs16 \
+\
+\
+
+\f2\b\fs28 readResponse
+\b0 \
+
+\f0\fs8 \
+
+\pard\tx3240\f1\fs28\fi-760\li3240\fc0\cf0 -
+\f0  (Response*)
+\b readResponse
+\b0 \
+
+\fs16 \
+
+\pard\tx2480\tx2860\tx3240\fs28\li2100\fc0\cf0 Reads a response from the server.  You should not invoke this method directly. \
+
+\fs16 \
+\
+\
+
+\f2\b\fs28 timeInTicks
+\b0 \
+
+\f0\fs8 \
+
+\pard\tx3240\f1\fs28\fi-760\li3240\fc0\cf0 -
+\f0  (int)
+\b timeInTicks
+\b0 \
+
+\fs16 \
+
+\pard\tx2480\tx2860\tx3240\fs28\li2100\fc0\cf0 No method description. \
+
+\fs16 \
+\
+\
+
+\f2\b\fs28 writeRequest:
+\b0 \
+
+\f0\fs8 \
+
+\pard\tx3240\f1\fs28\fi-760\li3240\fc0\cf0 -
+\f0  (void)
+\b writeRequest:
+\b0 (Request*)
+\i theRequest
+\i0 \
+
+\fs16 \
+
+\pard\tx2480\tx2860\tx3240\fs28\li2100\fc0\cf0 Sends the request 
+\i theRequest
+\i0  to the server.  You should not invoke this method directly. \
+
+}

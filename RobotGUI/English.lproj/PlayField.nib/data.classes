@@ -1,0 +1,4 @@
+"FirstResponder" = {ACTIONS = {}; OUTLETS = {}; SUPERCLASS = NSObject; };
+"NSObject" = {ACTIONS = {}; OUTLETS = {}; };
+"PlayFieldView" = {ACTIONS = {}; OUTLETS = {}; SUPERCLASS = NSView; };
+"RobotGame" = {ACTIONS = {}; OUTLETS = {playFieldView = id; }; SUPERCLASS = NSObject; };

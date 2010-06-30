@@ -1,0 +1,24 @@
+# -*- makefile -*-
+
+CC=gcc
+CCOPTS=-O3 -Wall -Wno-import -D_ROBOT_SERVER -D_LINUX
+
+OBJECTS=Actor.o Robot.o Missile.o \
+	Request.o Response.o Client.o \
+	RobotGame.o \
+	Vector.o \
+	MainController.o RobotServer_main.o
+
+all : RobotServer.linux
+
+%.o : %.m
+	$(CC) $(CCOPTS) -c $<
+
+%.o : %.c
+	$(CC) $(CCOPTS) -c $<
+
+RobotServer.linux : $(OBJECTS)
+	$(CC) -o $@ $(OBJECTS) -lm -ldl -lFoundation -lobjc
+
+clean :
+	-rm *~ *.o RobotServer.linux

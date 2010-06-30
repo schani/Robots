@@ -1,0 +1,17 @@
+# -*- makefile -*-
+
+CC=gcc
+CCOPTS=-Wall -Wno-import -D_ROBOT_CLIENT -D_LINUX
+
+OBJECTS=BoxerRobot.o BoxerRobot_main.o
+
+all : BoxerRobot.linux
+
+%.o : %.m
+	$(CC) $(CCOPTS) -c $<
+
+BoxerRobot.linux : $(OBJECTS)
+	$(CC) -o $@ $(OBJECTS) -L../RobotClient -lm -ldl -lRobotClient -lFoundation -lobjc
+
+clean :
+	-rm *~ *.o libRobotClient.a
