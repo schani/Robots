@@ -1,7 +1,7 @@
 // -*- objc -*-
 
 #import "RobotGame.h"
-#import "Robot.h"
+#import "GUIRobot.h"
 
 #import "MainController.h"
 

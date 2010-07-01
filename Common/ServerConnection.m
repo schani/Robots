@@ -8,6 +8,7 @@
 #import <assert.h>
 #import <string.h>
 #import <unistd.h>
+#import <stdlib.h>
 #ifdef _NEXT
 #import <libc.h>
 #endif
@@ -37,7 +38,7 @@ name.
     assert(socketFD != -1);
 
     serverAddress.sun_family = AF_UNIX;
-    strcpy(serverAddress.sun_path, [[NSString stringWithFormat: @"/tmp/robots.%@.socket", name] cString]);
+    strcpy((serverAddress.sun_path), ([[NSString stringWithFormat: @"/tmp/robots.%@.socket", name] cString]));
 
     assert(connect(socketFD, (struct sockaddr*)&serverAddress,
 		   strlen(serverAddress.sun_path) + sizeof(serverAddress.sun_family)) != -1);

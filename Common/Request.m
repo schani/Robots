@@ -47,10 +47,10 @@
 
 #ifdef _ROBOT_SERVER
 
-#import <Foundation/NSUtilities.h>
+#import <Foundation/Foundation.h>
 
 #import "Vector.h"
-#import "Robot.h"
+#import "ServerRobot.h"
 #import "RobotGame.h"
 #import "Client.h"
 #import "Response.h"

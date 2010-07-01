@@ -1,8 +1,8 @@
 // -*- objc -*-
 
-#import <Foundation/NSUtilities.h>
+#import <Foundation/Foundation.h>
 
-#import "Robot.h"
+#import "ServerRobot.h"
 #import "RobotGame.h"
 #import "Client.h"
 

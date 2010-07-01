@@ -1,6 +1,0 @@
-"FirstResponder" = {ACTIONS = {}; OUTLETS = {}; SUPERCLASS = NSObject; };
-"MainController" = {
-    ACTIONS = {"infoPanel:" = id; "newGame:" = id; }; 
-    OUTLETS = {infoPanel = id; }; 
-    SUPERCLASS = NSObject; 
-};

@@ -9,6 +9,7 @@
 #import <sys/un.h>
 #import <unistd.h>
 #import <stdio.h>
+#import <string.h>
 #ifdef _NEXT
 #import <libc.h>
 #endif
@@ -16,7 +17,7 @@
 #import <Foundation/NSString.h>
 
 #import "RobotGame.h"
-#import "Robot.h"
+#import "ServerRobot.h"
 #import "Client.h"
 
 #import "MainController.h"
@@ -40,7 +41,7 @@
     assert(socketFD != -1);
 
     myAddress.sun_family = AF_UNIX;
-    strcpy(myAddress.sun_path, [socketName cString]);
+    strcpy((myAddress.sun_path), [socketName cString]);
     assert(bind(socketFD, (struct sockaddr*)&myAddress,
 		strlen(myAddress.sun_path) + sizeof(myAddress.sun_family)) != -1);
     assert(listen(socketFD, 8) != -1);
@@ -53,7 +54,7 @@
 - (void) acceptClient
 {
     struct sockaddr_un clientAddress;
-    int addressSize = sizeof(clientAddress),
+    socklen_t addressSize = sizeof(clientAddress),
 	connectionFD;
 
     fprintf(stderr, "waiting for client to connect\n");

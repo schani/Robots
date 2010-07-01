@@ -5,7 +5,7 @@
 #import <libc.h>
 //#import <mach/cthreads.h>
 
-#import "Robot.h"
+#import "GUIRobot.h"
 #import "Missile.h"
 #import "PlayFieldView.h"
 #import "MainController.h"
@@ -119,11 +119,10 @@ ReadN (int fd, char *buf, int size)
 	dup(thePipe[1]);
 	close(thePipe[1]);
 
-	executableName = [[[NSBundle mainBundle] bundlePath]
-			     stringByAppendingPathComponent: @"RobotServer"];
+	executableName = [[NSBundle mainBundle] pathForResource: @"RobotServer" ofType: nil];
 	execl([executableName cString], [executableName cString],
 	      "--gui", "--name", [name cString],
-	      [[NSString stringWithFormat: @"%d", numRobots] cString], 0);
+	      [[NSString stringWithFormat: @"%d", numRobots] cString], NULL);
 	assert(0);
     }
 
@@ -214,8 +213,8 @@ ReadN (int fd, char *buf, int size)
 - (void) robotGameUpdate
 {
     [playFieldView setGame: self];
-    [playFieldView display];
-    [[[NSApplication sharedApplication] context] flush];
+    [playFieldView setNeedsDisplay: YES];
+    usleep (10000);
     [[MainController sharedInstance] updateStatusWithGame: self];
 }
 

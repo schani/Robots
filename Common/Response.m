@@ -2,7 +2,7 @@
 
 #ifdef _ROBOT_SERVER
 #import "Vector.h"
-#import "Robot.h"
+#import "ServerRobot.h"
 #endif
 
 #import "Response.h"

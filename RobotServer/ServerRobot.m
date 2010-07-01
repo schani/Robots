@@ -7,7 +7,7 @@
 #import "Missile.h"
 #import "RobotGame.h"
 
-#import "Robot.h"
+#import "ServerRobot.h"
 
 static BOOL
 AngleBetween (double angle, double angle1, double angle2)

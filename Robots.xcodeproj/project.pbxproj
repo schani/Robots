@@ -1,0 +1,1002 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8ECC280F11DBFC3D003B2A8E /* BoxerRobot_main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC280C11DBFC3D003B2A8E /* BoxerRobot_main.m */; };
+		8ECC281011DBFC3D003B2A8E /* BoxerRobot.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC280E11DBFC3D003B2A8E /* BoxerRobot.m */; };
+		8ECC281211DBFD66003B2A8E /* ServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC280411DBFBDB003B2A8E /* ServerConnection.m */; };
+		8ECC281311DBFD66003B2A8E /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC264411DBF5F6003B2A8E /* Request.m */; };
+		8ECC281411DBFD66003B2A8E /* Response.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC264611DBF5F6003B2A8E /* Response.m */; };
+		8ECC281711DBFD7E003B2A8E /* Robot.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC281611DBFD7E003B2A8E /* Robot.m */; };
+		8ECC283011DBFF3F003B2A8E /* Actor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC264B11DBF649003B2A8E /* Actor.m */; };
+		8ECC283111DBFF3F003B2A8E /* Client.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC264D11DBF649003B2A8E /* Client.m */; };
+		8ECC283211DBFF3F003B2A8E /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC264F11DBF649003B2A8E /* MainController.m */; };
+		8ECC283311DBFF3F003B2A8E /* Missile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC265111DBF649003B2A8E /* Missile.m */; };
+		8ECC283411DBFF3F003B2A8E /* ServerRobot.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC265311DBF649003B2A8E /* ServerRobot.m */; };
+		8ECC283511DBFF3F003B2A8E /* RobotGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC265511DBF649003B2A8E /* RobotGame.m */; };
+		8ECC283611DBFF3F003B2A8E /* RobotServer_main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC265611DBF649003B2A8E /* RobotServer_main.m */; };
+		8ECC283711DBFF3F003B2A8E /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC264411DBF5F6003B2A8E /* Request.m */; };
+		8ECC283811DBFF3F003B2A8E /* Response.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC264611DBF5F6003B2A8E /* Response.m */; };
+		8ECC283911DBFF3F003B2A8E /* Vector.c in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC263711DBF342003B2A8E /* Vector.c */; };
+		8ECC285F11DC048F003B2A8E /* Actor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC285311DC048F003B2A8E /* Actor.m */; };
+		8ECC286011DC048F003B2A8E /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC285511DC048F003B2A8E /* MainController.m */; };
+		8ECC286111DC048F003B2A8E /* Missile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC285711DC048F003B2A8E /* Missile.m */; };
+		8ECC286211DC048F003B2A8E /* PlayFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC285911DC048F003B2A8E /* PlayFieldView.m */; };
+		8ECC286311DC048F003B2A8E /* GUIRobot.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC285B11DC048F003B2A8E /* GUIRobot.m */; };
+		8ECC286411DC048F003B2A8E /* RobotGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC285D11DC048F003B2A8E /* RobotGame.m */; };
+		8ECC286511DC048F003B2A8E /* RobotGUI_main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC285E11DC048F003B2A8E /* RobotGUI_main.m */; };
+		8ECC286611DC049A003B2A8E /* Vector.c in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC263711DBF342003B2A8E /* Vector.c */; };
+		8ECC289611DC0EEA003B2A8E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ECC289511DC0EEA003B2A8E /* MainMenu.xib */; };
+		8ECC289911DC1100003B2A8E /* NewGame.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ECC289811DC1100003B2A8E /* NewGame.xib */; };
+		8ECC289C11DC130A003B2A8E /* PlayField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ECC289B11DC130A003B2A8E /* PlayField.xib */; };
+		8ECC28A611DC2245003B2A8E /* RobotServer in Resources */ = {isa = PBXBuildFile; fileRef = 8ECC282B11DBFEB2003B2A8E /* RobotServer */; };
+		8ECC28C711DC3E6A003B2A8E /* CornerRobot_main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC28C411DC3E6A003B2A8E /* CornerRobot_main.m */; };
+		8ECC28C811DC3E6A003B2A8E /* CornerRobot.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC28C611DC3E6A003B2A8E /* CornerRobot.m */; };
+		8ECC28C911DC3E77003B2A8E /* Vector.c in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC263711DBF342003B2A8E /* Vector.c */; };
+		8ECC28E311DC3F21003B2A8E /* CounterRobot_main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC28E011DC3F21003B2A8E /* CounterRobot_main.m */; };
+		8ECC28E411DC3F21003B2A8E /* CounterRobot.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC28E211DC3F21003B2A8E /* CounterRobot.m */; };
+		8ECC28E611DC3F29003B2A8E /* Vector.c in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC263711DBF342003B2A8E /* Vector.c */; };
+		8ECC28EA11DC3FE2003B2A8E /* Robot.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC281611DBFD7E003B2A8E /* Robot.m */; };
+		8ECC28EB11DC3FE2003B2A8E /* Robot.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC281611DBFD7E003B2A8E /* Robot.m */; };
+		8ECC28F211DC403A003B2A8E /* ServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC280411DBFBDB003B2A8E /* ServerConnection.m */; };
+		8ECC28F311DC403A003B2A8E /* ServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC280411DBFBDB003B2A8E /* ServerConnection.m */; };
+		8ECC28F411DC4045003B2A8E /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC264411DBF5F6003B2A8E /* Request.m */; };
+		8ECC28F511DC4045003B2A8E /* Response.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC264611DBF5F6003B2A8E /* Response.m */; };
+		8ECC28F611DC4046003B2A8E /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC264411DBF5F6003B2A8E /* Request.m */; };
+		8ECC28F711DC4046003B2A8E /* Response.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC264611DBF5F6003B2A8E /* Response.m */; };
+		8ECC292D11DC43CF003B2A8E /* SniperRobot_main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC292A11DC43CF003B2A8E /* SniperRobot_main.m */; };
+		8ECC292E11DC43CF003B2A8E /* SniperRobot.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC292C11DC43CF003B2A8E /* SniperRobot.m */; };
+		8ECC293211DC43E2003B2A8E /* TrackerRobot_main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC292F11DC43E2003B2A8E /* TrackerRobot_main.m */; };
+		8ECC293311DC43E2003B2A8E /* TrackerRobot.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC293111DC43E2003B2A8E /* TrackerRobot.m */; };
+		8ECC293411DC4415003B2A8E /* Robot.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC281611DBFD7E003B2A8E /* Robot.m */; };
+		8ECC293511DC4415003B2A8E /* ServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC280411DBFBDB003B2A8E /* ServerConnection.m */; };
+		8ECC293611DC4415003B2A8E /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC264411DBF5F6003B2A8E /* Request.m */; };
+		8ECC293711DC4415003B2A8E /* Response.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC264611DBF5F6003B2A8E /* Response.m */; };
+		8ECC293811DC4415003B2A8E /* Vector.c in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC263711DBF342003B2A8E /* Vector.c */; };
+		8ECC293911DC4416003B2A8E /* Robot.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC281611DBFD7E003B2A8E /* Robot.m */; };
+		8ECC293A11DC4416003B2A8E /* ServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC280411DBFBDB003B2A8E /* ServerConnection.m */; };
+		8ECC293B11DC4416003B2A8E /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC264411DBF5F6003B2A8E /* Request.m */; };
+		8ECC293C11DC4416003B2A8E /* Response.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC264611DBF5F6003B2A8E /* Response.m */; };
+		8ECC293D11DC4416003B2A8E /* Vector.c in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC263711DBF342003B2A8E /* Vector.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		8ECC263711DBF342003B2A8E /* Vector.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Vector.c; path = Common/Vector.c; sourceTree = "<group>"; };
+		8ECC263811DBF342003B2A8E /* Vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vector.h; path = Common/Vector.h; sourceTree = "<group>"; };
+		8ECC263F11DBF4A4003B2A8E /* RobotServer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RobotServer-Info.plist"; sourceTree = "<group>"; };
+		8ECC264311DBF5F6003B2A8E /* Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Request.h; path = Common/Request.h; sourceTree = "<group>"; };
+		8ECC264411DBF5F6003B2A8E /* Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Request.m; path = Common/Request.m; sourceTree = "<group>"; };
+		8ECC264511DBF5F6003B2A8E /* Response.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Response.h; path = Common/Response.h; sourceTree = "<group>"; };
+		8ECC264611DBF5F6003B2A8E /* Response.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Response.m; path = Common/Response.m; sourceTree = "<group>"; };
+		8ECC264A11DBF649003B2A8E /* Actor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Actor.h; path = RobotServer/Actor.h; sourceTree = "<group>"; };
+		8ECC264B11DBF649003B2A8E /* Actor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Actor.m; path = RobotServer/Actor.m; sourceTree = "<group>"; };
+		8ECC264C11DBF649003B2A8E /* Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Client.h; path = RobotServer/Client.h; sourceTree = "<group>"; };
+		8ECC264D11DBF649003B2A8E /* Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Client.m; path = RobotServer/Client.m; sourceTree = "<group>"; };
+		8ECC264E11DBF649003B2A8E /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainController.h; path = RobotServer/MainController.h; sourceTree = "<group>"; };
+		8ECC264F11DBF649003B2A8E /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainController.m; path = RobotServer/MainController.m; sourceTree = "<group>"; };
+		8ECC265011DBF649003B2A8E /* Missile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Missile.h; path = RobotServer/Missile.h; sourceTree = "<group>"; };
+		8ECC265111DBF649003B2A8E /* Missile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Missile.m; path = RobotServer/Missile.m; sourceTree = "<group>"; };
+		8ECC265211DBF649003B2A8E /* ServerRobot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServerRobot.h; path = RobotServer/ServerRobot.h; sourceTree = "<group>"; };
+		8ECC265311DBF649003B2A8E /* ServerRobot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServerRobot.m; path = RobotServer/ServerRobot.m; sourceTree = "<group>"; };
+		8ECC265411DBF649003B2A8E /* RobotGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RobotGame.h; path = RobotServer/RobotGame.h; sourceTree = "<group>"; };
+		8ECC265511DBF649003B2A8E /* RobotGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RobotGame.m; path = RobotServer/RobotGame.m; sourceTree = "<group>"; };
+		8ECC265611DBF649003B2A8E /* RobotServer_main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RobotServer_main.m; path = RobotServer/RobotServer_main.m; sourceTree = "<group>"; };
+		8ECC280311DBFBDB003B2A8E /* ServerConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServerConnection.h; path = Common/ServerConnection.h; sourceTree = "<group>"; };
+		8ECC280411DBFBDB003B2A8E /* ServerConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServerConnection.m; path = Common/ServerConnection.m; sourceTree = "<group>"; };
+		8ECC280811DBFC01003B2A8E /* BoxerRobot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BoxerRobot; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ECC280C11DBFC3D003B2A8E /* BoxerRobot_main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoxerRobot_main.m; path = BoxerRobot/BoxerRobot_main.m; sourceTree = "<group>"; };
+		8ECC280D11DBFC3D003B2A8E /* BoxerRobot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoxerRobot.h; path = BoxerRobot/BoxerRobot.h; sourceTree = "<group>"; };
+		8ECC280E11DBFC3D003B2A8E /* BoxerRobot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoxerRobot.m; path = BoxerRobot/BoxerRobot.m; sourceTree = "<group>"; };
+		8ECC281511DBFD7E003B2A8E /* Robot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Robot.h; path = Common/Robot.h; sourceTree = "<group>"; };
+		8ECC281611DBFD7E003B2A8E /* Robot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Robot.m; path = Common/Robot.m; sourceTree = "<group>"; };
+		8ECC282B11DBFEB2003B2A8E /* RobotServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RobotServer; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ECC284811DC041A003B2A8E /* RobotGUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RobotGUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ECC284A11DC041A003B2A8E /* RobotGUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RobotGUI-Info.plist"; sourceTree = "<group>"; };
+		8ECC285211DC048F003B2A8E /* Actor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Actor.h; path = RobotGUI/Actor.h; sourceTree = "<group>"; };
+		8ECC285311DC048F003B2A8E /* Actor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Actor.m; path = RobotGUI/Actor.m; sourceTree = "<group>"; };
+		8ECC285411DC048F003B2A8E /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainController.h; path = RobotGUI/MainController.h; sourceTree = "<group>"; };
+		8ECC285511DC048F003B2A8E /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainController.m; path = RobotGUI/MainController.m; sourceTree = "<group>"; };
+		8ECC285611DC048F003B2A8E /* Missile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Missile.h; path = RobotGUI/Missile.h; sourceTree = "<group>"; };
+		8ECC285711DC048F003B2A8E /* Missile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Missile.m; path = RobotGUI/Missile.m; sourceTree = "<group>"; };
+		8ECC285811DC048F003B2A8E /* PlayFieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayFieldView.h; path = RobotGUI/PlayFieldView.h; sourceTree = "<group>"; };
+		8ECC285911DC048F003B2A8E /* PlayFieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayFieldView.m; path = RobotGUI/PlayFieldView.m; sourceTree = "<group>"; };
+		8ECC285A11DC048F003B2A8E /* GUIRobot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GUIRobot.h; path = RobotGUI/GUIRobot.h; sourceTree = "<group>"; };
+		8ECC285B11DC048F003B2A8E /* GUIRobot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GUIRobot.m; path = RobotGUI/GUIRobot.m; sourceTree = "<group>"; };
+		8ECC285C11DC048F003B2A8E /* RobotGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RobotGame.h; path = RobotGUI/RobotGame.h; sourceTree = "<group>"; };
+		8ECC285D11DC048F003B2A8E /* RobotGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RobotGame.m; path = RobotGUI/RobotGame.m; sourceTree = "<group>"; };
+		8ECC285E11DC048F003B2A8E /* RobotGUI_main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RobotGUI_main.m; path = RobotGUI/RobotGUI_main.m; sourceTree = "<group>"; };
+		8ECC289511DC0EEA003B2A8E /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainMenu.xib; path = RobotGUI/MainMenu.xib; sourceTree = "<group>"; };
+		8ECC289811DC1100003B2A8E /* NewGame.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = NewGame.xib; path = RobotGUI/NewGame.xib; sourceTree = "<group>"; };
+		8ECC289B11DC130A003B2A8E /* PlayField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PlayField.xib; path = RobotGUI/PlayField.xib; sourceTree = "<group>"; };
+		8ECC28BA11DC3E28003B2A8E /* CornerRobot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CornerRobot; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ECC28C411DC3E6A003B2A8E /* CornerRobot_main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CornerRobot_main.m; path = CornerRobot/CornerRobot_main.m; sourceTree = "<group>"; };
+		8ECC28C511DC3E6A003B2A8E /* CornerRobot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CornerRobot.h; path = CornerRobot/CornerRobot.h; sourceTree = "<group>"; };
+		8ECC28C611DC3E6A003B2A8E /* CornerRobot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CornerRobot.m; path = CornerRobot/CornerRobot.m; sourceTree = "<group>"; };
+		8ECC28DC11DC3F09003B2A8E /* CounterRobot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CounterRobot; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ECC28E011DC3F21003B2A8E /* CounterRobot_main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CounterRobot_main.m; path = CounterRobot/CounterRobot_main.m; sourceTree = "<group>"; };
+		8ECC28E111DC3F21003B2A8E /* CounterRobot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CounterRobot.h; path = CounterRobot/CounterRobot.h; sourceTree = "<group>"; };
+		8ECC28E211DC3F21003B2A8E /* CounterRobot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CounterRobot.m; path = CounterRobot/CounterRobot.m; sourceTree = "<group>"; };
+		8ECC291A11DC433E003B2A8E /* SniperRobot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SniperRobot; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ECC292511DC4355003B2A8E /* TrackerRobot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TrackerRobot; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ECC292A11DC43CF003B2A8E /* SniperRobot_main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SniperRobot_main.m; path = SniperRobot/SniperRobot_main.m; sourceTree = "<group>"; };
+		8ECC292B11DC43CF003B2A8E /* SniperRobot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SniperRobot.h; path = SniperRobot/SniperRobot.h; sourceTree = "<group>"; };
+		8ECC292C11DC43CF003B2A8E /* SniperRobot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SniperRobot.m; path = SniperRobot/SniperRobot.m; sourceTree = "<group>"; };
+		8ECC292F11DC43E2003B2A8E /* TrackerRobot_main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrackerRobot_main.m; path = TrackerRobot/TrackerRobot_main.m; sourceTree = "<group>"; };
+		8ECC293011DC43E2003B2A8E /* TrackerRobot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrackerRobot.h; path = TrackerRobot/TrackerRobot.h; sourceTree = "<group>"; };
+		8ECC293111DC43E2003B2A8E /* TrackerRobot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrackerRobot.m; path = TrackerRobot/TrackerRobot.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8ECC280611DBFC01003B2A8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECC282911DBFEB2003B2A8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECC284611DC041A003B2A8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECC28B811DC3E28003B2A8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECC28DA11DC3F09003B2A8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECC291811DC433E003B2A8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECC292311DC4355003B2A8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8ECC292F11DC43E2003B2A8E /* TrackerRobot_main.m */,
+				8ECC293011DC43E2003B2A8E /* TrackerRobot.h */,
+				8ECC293111DC43E2003B2A8E /* TrackerRobot.m */,
+				8ECC292A11DC43CF003B2A8E /* SniperRobot_main.m */,
+				8ECC292B11DC43CF003B2A8E /* SniperRobot.h */,
+				8ECC292C11DC43CF003B2A8E /* SniperRobot.m */,
+				8ECC28E011DC3F21003B2A8E /* CounterRobot_main.m */,
+				8ECC28E111DC3F21003B2A8E /* CounterRobot.h */,
+				8ECC28E211DC3F21003B2A8E /* CounterRobot.m */,
+				8ECC28C411DC3E6A003B2A8E /* CornerRobot_main.m */,
+				8ECC28C511DC3E6A003B2A8E /* CornerRobot.h */,
+				8ECC28C611DC3E6A003B2A8E /* CornerRobot.m */,
+				8ECC285211DC048F003B2A8E /* Actor.h */,
+				8ECC285311DC048F003B2A8E /* Actor.m */,
+				8ECC285411DC048F003B2A8E /* MainController.h */,
+				8ECC285511DC048F003B2A8E /* MainController.m */,
+				8ECC285611DC048F003B2A8E /* Missile.h */,
+				8ECC285711DC048F003B2A8E /* Missile.m */,
+				8ECC285811DC048F003B2A8E /* PlayFieldView.h */,
+				8ECC285911DC048F003B2A8E /* PlayFieldView.m */,
+				8ECC285A11DC048F003B2A8E /* GUIRobot.h */,
+				8ECC285B11DC048F003B2A8E /* GUIRobot.m */,
+				8ECC285C11DC048F003B2A8E /* RobotGame.h */,
+				8ECC285D11DC048F003B2A8E /* RobotGame.m */,
+				8ECC285E11DC048F003B2A8E /* RobotGUI_main.m */,
+				8ECC281511DBFD7E003B2A8E /* Robot.h */,
+				8ECC281611DBFD7E003B2A8E /* Robot.m */,
+				8ECC280C11DBFC3D003B2A8E /* BoxerRobot_main.m */,
+				8ECC280D11DBFC3D003B2A8E /* BoxerRobot.h */,
+				8ECC280E11DBFC3D003B2A8E /* BoxerRobot.m */,
+				8ECC280311DBFBDB003B2A8E /* ServerConnection.h */,
+				8ECC280411DBFBDB003B2A8E /* ServerConnection.m */,
+				8ECC264A11DBF649003B2A8E /* Actor.h */,
+				8ECC264B11DBF649003B2A8E /* Actor.m */,
+				8ECC264C11DBF649003B2A8E /* Client.h */,
+				8ECC264D11DBF649003B2A8E /* Client.m */,
+				8ECC264E11DBF649003B2A8E /* MainController.h */,
+				8ECC264F11DBF649003B2A8E /* MainController.m */,
+				8ECC265011DBF649003B2A8E /* Missile.h */,
+				8ECC265111DBF649003B2A8E /* Missile.m */,
+				8ECC265211DBF649003B2A8E /* ServerRobot.h */,
+				8ECC265311DBF649003B2A8E /* ServerRobot.m */,
+				8ECC265411DBF649003B2A8E /* RobotGame.h */,
+				8ECC265511DBF649003B2A8E /* RobotGame.m */,
+				8ECC265611DBF649003B2A8E /* RobotServer_main.m */,
+				8ECC264311DBF5F6003B2A8E /* Request.h */,
+				8ECC264411DBF5F6003B2A8E /* Request.m */,
+				8ECC264511DBF5F6003B2A8E /* Response.h */,
+				8ECC264611DBF5F6003B2A8E /* Response.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8ECC280811DBFC01003B2A8E /* BoxerRobot */,
+				8ECC282B11DBFEB2003B2A8E /* RobotServer */,
+				8ECC284811DC041A003B2A8E /* RobotGUI.app */,
+				8ECC28BA11DC3E28003B2A8E /* CornerRobot */,
+				8ECC28DC11DC3F09003B2A8E /* CounterRobot */,
+				8ECC291A11DC433E003B2A8E /* SniperRobot */,
+				8ECC292511DC4355003B2A8E /* TrackerRobot */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Robots */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				8ECC263F11DBF4A4003B2A8E /* RobotServer-Info.plist */,
+				8ECC284A11DC041A003B2A8E /* RobotGUI-Info.plist */,
+			);
+			name = Robots;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8ECC263711DBF342003B2A8E /* Vector.c */,
+				8ECC263811DBF342003B2A8E /* Vector.h */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8ECC289511DC0EEA003B2A8E /* MainMenu.xib */,
+				8ECC289811DC1100003B2A8E /* NewGame.xib */,
+				8ECC289B11DC130A003B2A8E /* PlayField.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8ECC280711DBFC01003B2A8E /* BoxerRobot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ECC281111DBFC3D003B2A8E /* Build configuration list for PBXNativeTarget "BoxerRobot" */;
+			buildPhases = (
+				8ECC280511DBFC01003B2A8E /* Sources */,
+				8ECC280611DBFC01003B2A8E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BoxerRobot;
+			productName = BoxerRobot;
+			productReference = 8ECC280811DBFC01003B2A8E /* BoxerRobot */;
+			productType = "com.apple.product-type.tool";
+		};
+		8ECC282A11DBFEB2003B2A8E /* RobotServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ECC282F11DBFEEF003B2A8E /* Build configuration list for PBXNativeTarget "RobotServer" */;
+			buildPhases = (
+				8ECC282811DBFEB2003B2A8E /* Sources */,
+				8ECC282911DBFEB2003B2A8E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RobotServer;
+			productName = RobotServer;
+			productReference = 8ECC282B11DBFEB2003B2A8E /* RobotServer */;
+			productType = "com.apple.product-type.tool";
+		};
+		8ECC284711DC041A003B2A8E /* RobotGUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ECC284D11DC041B003B2A8E /* Build configuration list for PBXNativeTarget "RobotGUI" */;
+			buildPhases = (
+				8ECC284411DC041A003B2A8E /* Resources */,
+				8ECC284511DC041A003B2A8E /* Sources */,
+				8ECC284611DC041A003B2A8E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RobotGUI;
+			productName = RobotGUI;
+			productReference = 8ECC284811DC041A003B2A8E /* RobotGUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8ECC28B911DC3E28003B2A8E /* CornerRobot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ECC28C311DC3E3A003B2A8E /* Build configuration list for PBXNativeTarget "CornerRobot" */;
+			buildPhases = (
+				8ECC28B711DC3E28003B2A8E /* Sources */,
+				8ECC28B811DC3E28003B2A8E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CornerRobot;
+			productName = CornerRobot;
+			productReference = 8ECC28BA11DC3E28003B2A8E /* CornerRobot */;
+			productType = "com.apple.product-type.tool";
+		};
+		8ECC28DB11DC3F09003B2A8E /* CounterRobot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ECC28E511DC3F21003B2A8E /* Build configuration list for PBXNativeTarget "CounterRobot" */;
+			buildPhases = (
+				8ECC28D911DC3F09003B2A8E /* Sources */,
+				8ECC28DA11DC3F09003B2A8E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CounterRobot;
+			productName = CounterRobot;
+			productReference = 8ECC28DC11DC3F09003B2A8E /* CounterRobot */;
+			productType = "com.apple.product-type.tool";
+		};
+		8ECC291911DC433E003B2A8E /* SniperRobot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ECC292111DC4343003B2A8E /* Build configuration list for PBXNativeTarget "SniperRobot" */;
+			buildPhases = (
+				8ECC291711DC433E003B2A8E /* Sources */,
+				8ECC291811DC433E003B2A8E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SniperRobot;
+			productName = SniperRobot;
+			productReference = 8ECC291A11DC433E003B2A8E /* SniperRobot */;
+			productType = "com.apple.product-type.tool";
+		};
+		8ECC292411DC4355003B2A8E /* TrackerRobot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ECC292911DC4373003B2A8E /* Build configuration list for PBXNativeTarget "TrackerRobot" */;
+			buildPhases = (
+				8ECC292211DC4355003B2A8E /* Sources */,
+				8ECC292311DC4355003B2A8E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrackerRobot;
+			productName = TrackerRobot;
+			productReference = 8ECC292511DC4355003B2A8E /* TrackerRobot */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Robots" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Robots */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8ECC280711DBFC01003B2A8E /* BoxerRobot */,
+				8ECC282A11DBFEB2003B2A8E /* RobotServer */,
+				8ECC284711DC041A003B2A8E /* RobotGUI */,
+				8ECC28B911DC3E28003B2A8E /* CornerRobot */,
+				8ECC28DB11DC3F09003B2A8E /* CounterRobot */,
+				8ECC291911DC433E003B2A8E /* SniperRobot */,
+				8ECC292411DC4355003B2A8E /* TrackerRobot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8ECC284411DC041A003B2A8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ECC289611DC0EEA003B2A8E /* MainMenu.xib in Resources */,
+				8ECC289911DC1100003B2A8E /* NewGame.xib in Resources */,
+				8ECC289C11DC130A003B2A8E /* PlayField.xib in Resources */,
+				8ECC28A611DC2245003B2A8E /* RobotServer in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8ECC280511DBFC01003B2A8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ECC280F11DBFC3D003B2A8E /* BoxerRobot_main.m in Sources */,
+				8ECC281011DBFC3D003B2A8E /* BoxerRobot.m in Sources */,
+				8ECC281211DBFD66003B2A8E /* ServerConnection.m in Sources */,
+				8ECC281311DBFD66003B2A8E /* Request.m in Sources */,
+				8ECC281411DBFD66003B2A8E /* Response.m in Sources */,
+				8ECC281711DBFD7E003B2A8E /* Robot.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECC282811DBFEB2003B2A8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ECC283011DBFF3F003B2A8E /* Actor.m in Sources */,
+				8ECC283111DBFF3F003B2A8E /* Client.m in Sources */,
+				8ECC283211DBFF3F003B2A8E /* MainController.m in Sources */,
+				8ECC283311DBFF3F003B2A8E /* Missile.m in Sources */,
+				8ECC283411DBFF3F003B2A8E /* ServerRobot.m in Sources */,
+				8ECC283511DBFF3F003B2A8E /* RobotGame.m in Sources */,
+				8ECC283611DBFF3F003B2A8E /* RobotServer_main.m in Sources */,
+				8ECC283711DBFF3F003B2A8E /* Request.m in Sources */,
+				8ECC283811DBFF3F003B2A8E /* Response.m in Sources */,
+				8ECC283911DBFF3F003B2A8E /* Vector.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECC284511DC041A003B2A8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ECC285F11DC048F003B2A8E /* Actor.m in Sources */,
+				8ECC286011DC048F003B2A8E /* MainController.m in Sources */,
+				8ECC286111DC048F003B2A8E /* Missile.m in Sources */,
+				8ECC286211DC048F003B2A8E /* PlayFieldView.m in Sources */,
+				8ECC286311DC048F003B2A8E /* GUIRobot.m in Sources */,
+				8ECC286411DC048F003B2A8E /* RobotGame.m in Sources */,
+				8ECC286511DC048F003B2A8E /* RobotGUI_main.m in Sources */,
+				8ECC286611DC049A003B2A8E /* Vector.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECC28B711DC3E28003B2A8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ECC28C711DC3E6A003B2A8E /* CornerRobot_main.m in Sources */,
+				8ECC28C811DC3E6A003B2A8E /* CornerRobot.m in Sources */,
+				8ECC28C911DC3E77003B2A8E /* Vector.c in Sources */,
+				8ECC28EA11DC3FE2003B2A8E /* Robot.m in Sources */,
+				8ECC28F211DC403A003B2A8E /* ServerConnection.m in Sources */,
+				8ECC28F411DC4045003B2A8E /* Request.m in Sources */,
+				8ECC28F511DC4045003B2A8E /* Response.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECC28D911DC3F09003B2A8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ECC28E311DC3F21003B2A8E /* CounterRobot_main.m in Sources */,
+				8ECC28E411DC3F21003B2A8E /* CounterRobot.m in Sources */,
+				8ECC28E611DC3F29003B2A8E /* Vector.c in Sources */,
+				8ECC28EB11DC3FE2003B2A8E /* Robot.m in Sources */,
+				8ECC28F311DC403A003B2A8E /* ServerConnection.m in Sources */,
+				8ECC28F611DC4046003B2A8E /* Request.m in Sources */,
+				8ECC28F711DC4046003B2A8E /* Response.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECC291711DC433E003B2A8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ECC292D11DC43CF003B2A8E /* SniperRobot_main.m in Sources */,
+				8ECC292E11DC43CF003B2A8E /* SniperRobot.m in Sources */,
+				8ECC293411DC4415003B2A8E /* Robot.m in Sources */,
+				8ECC293511DC4415003B2A8E /* ServerConnection.m in Sources */,
+				8ECC293611DC4415003B2A8E /* Request.m in Sources */,
+				8ECC293711DC4415003B2A8E /* Response.m in Sources */,
+				8ECC293811DC4415003B2A8E /* Vector.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECC292211DC4355003B2A8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ECC293211DC43E2003B2A8E /* TrackerRobot_main.m in Sources */,
+				8ECC293311DC43E2003B2A8E /* TrackerRobot.m in Sources */,
+				8ECC293911DC4416003B2A8E /* Robot.m in Sources */,
+				8ECC293A11DC4416003B2A8E /* ServerConnection.m in Sources */,
+				8ECC293B11DC4416003B2A8E /* Request.m in Sources */,
+				8ECC293C11DC4416003B2A8E /* Response.m in Sources */,
+				8ECC293D11DC4416003B2A8E /* Vector.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8ECC280A11DBFC01003B2A8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = _ROBOT_CLIENT;
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = BoxerRobot;
+			};
+			name = Debug;
+		};
+		8ECC280B11DBFC01003B2A8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = BoxerRobot;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		8ECC282D11DBFEB3003B2A8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = _ROBOT_SERVER;
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = RobotServer;
+			};
+			name = Debug;
+		};
+		8ECC282E11DBFEB3003B2A8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = RobotServer;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		8ECC284B11DC041B003B2A8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "RobotGUI-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = RobotGUI;
+			};
+			name = Debug;
+		};
+		8ECC284C11DC041B003B2A8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "RobotGUI-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = RobotGUI;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		8ECC28BC11DC3E29003B2A8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.framework *.gch (*) CVS .svn *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = _ROBOT_CLIENT;
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = CornerRobot;
+			};
+			name = Debug;
+		};
+		8ECC28BD11DC3E29003B2A8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = CornerRobot;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		8ECC28DE11DC3F0A003B2A8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = _ROBOT_CLIENT;
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = CounterRobot;
+			};
+			name = Debug;
+		};
+		8ECC28DF11DC3F0A003B2A8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = CounterRobot;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		8ECC291C11DC433F003B2A8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = _ROBOT_CLIENT;
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = SniperRobot;
+			};
+			name = Debug;
+		};
+		8ECC291D11DC433F003B2A8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = SniperRobot;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		8ECC292711DC4355003B2A8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = _ROBOT_CLIENT;
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = TrackerRobot;
+			};
+			name = Debug;
+		};
+		8ECC292811DC4355003B2A8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = TrackerRobot;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8ECC281111DBFC3D003B2A8E /* Build configuration list for PBXNativeTarget "BoxerRobot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ECC280A11DBFC01003B2A8E /* Debug */,
+				8ECC280B11DBFC01003B2A8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8ECC282F11DBFEEF003B2A8E /* Build configuration list for PBXNativeTarget "RobotServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ECC282D11DBFEB3003B2A8E /* Debug */,
+				8ECC282E11DBFEB3003B2A8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8ECC284D11DC041B003B2A8E /* Build configuration list for PBXNativeTarget "RobotGUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ECC284B11DC041B003B2A8E /* Debug */,
+				8ECC284C11DC041B003B2A8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8ECC28C311DC3E3A003B2A8E /* Build configuration list for PBXNativeTarget "CornerRobot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ECC28BC11DC3E29003B2A8E /* Debug */,
+				8ECC28BD11DC3E29003B2A8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8ECC28E511DC3F21003B2A8E /* Build configuration list for PBXNativeTarget "CounterRobot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ECC28DE11DC3F0A003B2A8E /* Debug */,
+				8ECC28DF11DC3F0A003B2A8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8ECC292111DC4343003B2A8E /* Build configuration list for PBXNativeTarget "SniperRobot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ECC291C11DC433F003B2A8E /* Debug */,
+				8ECC291D11DC433F003B2A8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8ECC292911DC4373003B2A8E /* Build configuration list for PBXNativeTarget "TrackerRobot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ECC292711DC4355003B2A8E /* Debug */,
+				8ECC292811DC4355003B2A8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Robots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

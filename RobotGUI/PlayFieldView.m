@@ -31,9 +31,8 @@
     NSEnumerator *enumerator;
     Actor *actor;
 
-    PSsetgray(1.0);
-    PSsetlinewidth(0.0);
-    NSRectFill(rect);
+    [[NSColor whiteColor] setFill];
+    [[NSBezierPath bezierPathWithRect: rect] fill];
 
     [self scaleUnitSquareToSize: NSMakeSize(bounds.size.width / 1000.0,
 					    bounds.size.height / 1000.0)];

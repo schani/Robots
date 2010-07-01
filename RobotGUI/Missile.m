@@ -1,7 +1,5 @@
 // -*- objc -*-
 
-#import <AppKit/psops.h>
-
 #import "RobotGame.h"
 
 #import "Missile.h"
@@ -48,22 +46,27 @@
     if (!goneOff)
     {
 	Vector2D vector;
+	NSBezierPath *path = [NSBezierPath bezierPath];
 
 	MultScalar2D(&vector, 0.5, &speed);
 	SubVectors2D(&vector, &position, &vector);
 
-	PSmoveto(vector.x, vector.y);
-	PSlineto(position.x, position.y);
-	PSmoveto(target.x - 10, target.y - 10);
-	PSlineto(target.x + 10, target.y + 10);
-	PSmoveto(target.x + 10, target.y - 10);
-	PSlineto(target.x - 10, target.y + 10);
-	PSstroke();
+	[path moveToPoint: NSMakePoint (vector.x, vector.y)];
+	[path lineToPoint: NSMakePoint (position.x, position.y)];
+
+	[path moveToPoint: NSMakePoint (target.x - 10, target.y - 10)];
+	[path lineToPoint: NSMakePoint (target.x + 10, target.y + 10)];
+	[path moveToPoint: NSMakePoint (target.x + 10, target.y - 10)];
+	[path lineToPoint: NSMakePoint (target.x - 10, target.y + 10)];
+
+	[path stroke];
     }
     else
     {
-	PSarc(target.x, target.y, detonationRadius, 0, 360);
-	PSstroke();
+	[[NSBezierPath bezierPathWithOvalInRect: NSMakeRect (target.x - detonationRadius,
+							     target.y - detonationRadius,
+							     detonationRadius * 2,
+							     detonationRadius * 2)] stroke];
     }
 }
 

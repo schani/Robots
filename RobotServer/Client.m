@@ -7,7 +7,7 @@
 #endif
 
 #import "Vector.h"
-#import "Robot.h"
+#import "ServerRobot.h"
 #import "RobotGame.h"
 #import "Response.h"
 #import "Request.h"

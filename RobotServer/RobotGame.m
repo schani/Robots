@@ -9,7 +9,7 @@
 #ifdef _NEXT
 #import <libc.h>
 #endif
-#import <Foundation/NSUtilities.h>
+#import <Foundation/Foundation.h>
 
 #import "Actor.h"
 #import "Request.h"
