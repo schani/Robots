@@ -16,10 +16,12 @@
     id numPopUp;
 
     id playFieldView;
+    id speedSlider;
 
     int tick;
 
     int updateSpeed;
+    int sleepUsecs;
 
     BOOL gameStopped;
 }
@@ -30,6 +32,8 @@
 - (void) startGame: (id) sender;
 - (void) dontStartGame: (id) sender;
 - (void) stopGame: (id) sender;
+
+- (void) speedSliderChanged: (id) sender;
 
 - (void) startGameWithName: (NSString*) name numberOfRobots: (int) numRobots;
 

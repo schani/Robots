@@ -98,7 +98,7 @@ ReadN (int fd, char *buf, int size)
     missiles = [[NSMutableArray arrayWithCapacity: 8] retain];
 
     tick = 0;
-    updateSpeed = 5;
+    updateSpeed = 1;
 
     gameStopped = NO;
 
@@ -128,6 +128,8 @@ ReadN (int fd, char *buf, int size)
 
     [NSBundle loadNibNamed: @"PlayField.nib" owner: self];
 
+    [self speedSliderChanged: nil];
+
     port1 = [NSPort port];
     port2 = [NSPort port];
     threadArgs = [NSArray arrayWithObjects: port2, port1, nil];
@@ -142,6 +144,11 @@ ReadN (int fd, char *buf, int size)
 - (void) stopGame: (id) sender
 {
     gameStopped = YES;
+}
+
+- (void) speedSliderChanged: (id) sender
+{
+    sleepUsecs = (int) ((1.0 - [speedSlider doubleValue]) * 10000);
 }
 
 - (int) pipeEnd
@@ -214,7 +221,7 @@ ReadN (int fd, char *buf, int size)
 {
     [playFieldView setGame: self];
     [playFieldView setNeedsDisplay: YES];
-    usleep (10000);
+    usleep (sleepUsecs);
     [[MainController sharedInstance] updateStatusWithGame: self];
 }
 
